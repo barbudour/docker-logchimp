@@ -18,7 +18,7 @@ RUN apk update && \
     cd app && \
     git checkout ${LOGCHIMP_VERSION} && \
     yarn install && \
-    yarn frontend:build && \
+    yarn build && \
     apk del .logchimp-build-deps && \
     rm -rf /root/.cache /var/cache/apk/*
 
